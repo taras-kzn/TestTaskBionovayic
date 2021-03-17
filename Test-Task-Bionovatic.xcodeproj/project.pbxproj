@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		841F2B222601F079009E9D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F2B212601F079009E9D65 /* AppDelegate.swift */; };
 		841F2B242601F079009E9D65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F2B232601F079009E9D65 /* SceneDelegate.swift */; };
-		841F2B262601F079009E9D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F2B252601F079009E9D65 /* ViewController.swift */; };
+		841F2B262601F079009E9D65 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F2B252601F079009E9D65 /* MainViewController.swift */; };
 		841F2B292601F079009E9D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F2B272601F079009E9D65 /* Main.storyboard */; };
 		841F2B2B2601F07B009E9D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F2B2A2601F07B009E9D65 /* Assets.xcassets */; };
 		841F2B2E2601F07B009E9D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F2B2C2601F07B009E9D65 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		841F2B1E2601F079009E9D65 /* Test-Task-Bionovatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Task-Bionovatic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841F2B212601F079009E9D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841F2B232601F079009E9D65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		841F2B252601F079009E9D65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		841F2B252601F079009E9D65 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		841F2B282601F079009E9D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		841F2B2A2601F07B009E9D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841F2B2D2601F07B009E9D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,15 +59,55 @@
 		841F2B202601F079009E9D65 /* Test-Task-Bionovatic */ = {
 			isa = PBXGroup;
 			children = (
-				841F2B212601F079009E9D65 /* AppDelegate.swift */,
-				841F2B232601F079009E9D65 /* SceneDelegate.swift */,
-				841F2B252601F079009E9D65 /* ViewController.swift */,
-				841F2B272601F079009E9D65 /* Main.storyboard */,
-				841F2B2A2601F07B009E9D65 /* Assets.xcassets */,
-				841F2B2C2601F07B009E9D65 /* LaunchScreen.storyboard */,
-				841F2B2F2601F07B009E9D65 /* Info.plist */,
+				841F2B452601F86C009E9D65 /* MainViewController */,
+				841F2B412601F7D3009E9D65 /* Application */,
+				841F2B442601F832009E9D65 /* Resource */,
 			);
 			path = "Test-Task-Bionovatic";
+			sourceTree = "<group>";
+		};
+		841F2B412601F7D3009E9D65 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				841F2B432601F7EA009E9D65 /* Controller */,
+				841F2B422601F7E2009E9D65 /* View */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		841F2B422601F7E2009E9D65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				841F2B272601F079009E9D65 /* Main.storyboard */,
+				841F2B2C2601F07B009E9D65 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		841F2B432601F7EA009E9D65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				841F2B212601F079009E9D65 /* AppDelegate.swift */,
+				841F2B232601F079009E9D65 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		841F2B442601F832009E9D65 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				841F2B2F2601F07B009E9D65 /* Info.plist */,
+				841F2B2A2601F07B009E9D65 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		841F2B452601F86C009E9D65 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F2B252601F079009E9D65 /* MainViewController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841F2B262601F079009E9D65 /* ViewController.swift in Sources */,
+				841F2B262601F079009E9D65 /* MainViewController.swift in Sources */,
 				841F2B222601F079009E9D65 /* AppDelegate.swift in Sources */,
 				841F2B242601F079009E9D65 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PQ8675BM6;
-				INFOPLIST_FILE = "Test-Task-Bionovatic/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Test-Task-Bionovatic/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PQ8675BM6;
-				INFOPLIST_FILE = "Test-Task-Bionovatic/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Test-Task-Bionovatic/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
