@@ -1,0 +1,82 @@
+# Xcode
+#
+Участники # gitignore: не забудьте обновить Global / Xcode.gitignore, Objective-C.gitignore и Swift.gitignore
+
+# # Сборка создана
+build /
+DerivedData /
+
+# # Различные настройки
+* .pbxuser
+! default.pbxuser
+* .mode1v3
+! default.mode1v3
+* .mode2v3
+! default.mode2v3
+* .perspectivev3
+! default.perspectivev3
+xcuserdata /
+
+# # Другое
+* .moved-aside
+* .xccheckout
+* .xcscmblueprint
+
+# # Специфично для Obj-C / Swift
+* .hmap
+* .ipa
+* .dSYM.zip
+* .dSYM
+
+# # Детские площадки
+timeline.xctimeline
+игровая площадка.xcworkspace
+
+# Swift менеджер пакетов
+#
+# Добавьте эту строку, если вы не хотите проверять исходный код из зависимостей Swift Package Manager.
+# Пакеты /
+# Package.pins
+# Package.resolved
+.build /
+
+# Какао-стручки
+#
+# Мы не рекомендуем добавлять каталог Pods в ваш .gitignore. тем не мение
+# судите сами, плюсы и минусы указаны по адресу:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Стручки /
+#
+# Добавьте эту строку, если вы не хотите проверять исходный код из рабочей области Xcode
+# * .xcworkspace
+
+# Карфаген
+#
+# Добавьте эту строку, если вы не хотите проверять исходный код из зависимостей Carthage.
+# Carthage / Checkouts
+
+Карфаген / Постройка
+
+# Управление зависимостями Accio
+Зависимости /
+.accio /
+
+# скоростная полоса
+#
+# Не рекомендуется хранить скриншоты в репозитории git. Вместо этого используйте скоростную полосу для повторной генерации
+# скриншотов всякий раз, когда они нужны.
+# Для получения дополнительной информации о рекомендуемой настройке посетите:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+Fastlane / report.xml
+fastlane / Preview.html
+fastlane / screenshots / ** / * .png
+fastlane / test_output
+
+# Внедрение кода
+#
+# После нового кода Injection tools создается папка / iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject /
